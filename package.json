@@ -1,11 +1,12 @@
 {
   "name": "react-img-preview",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react image preview plugin",
-  "main": "src/components/imgpreview.jsx",
+  "main": "dist/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --open --hot --port 3333 --host 127.0.0.1"
+    "dev": "webpack-dev-server --open --hot --port 3333 --host 127.0.0.1",
+    "build": "webpack --config webpack.config.pub.js"
   },
   "repository": {
     "type": "git",
