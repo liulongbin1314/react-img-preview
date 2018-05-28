@@ -1,15 +1,27 @@
 {
-  "name": "react_01",
+  "name": "react-img-preview",
   "version": "1.0.0",
-  "description": "",
+  "description": "A react image preview plugin",
   "main": "src/components/imgpreview.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --open --hot --port 3333 --host 127.0.0.1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daidaitu1314/react-img-preview.git"
+  },
+  "keywords": [
+    "react",
+    "image",
+    "preview",
+    "photoswipe"
+  ],
+  "author": "liulongbin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daidaitu1314/react-img-preview/issues"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",

@@ -1,4 +1,3 @@
-// 1. 导入包 
 import React from 'react'
 import ReactDOM from 'react-dom'
 // 导入缩略图组件
@@ -9,7 +8,12 @@ class Test extends React.Component {
   constructor() {
     super()
     this.state = {
-      // 所有要展示的图片
+      // 所有要进行预览的图片
+      // 每一个图片对象，都要包含如下三个属性：{src, w, h}
+      // 其中：
+      // src 是图片的地址
+      // w 是图片预览时候的宽度
+      // h 是图片预览时候的高度
       items: [
         {
           src: 'https://placekitten.com/600/400',
@@ -27,12 +31,19 @@ class Test extends React.Component {
 
   render() {
     return <div>
-      <Preview imglist={this.state.items} previewBoxStyle={{ border: '1px solid #eee' }} thumbImgStyle={{ margin: 10, width: 100, height: 100 }}></Preview>
+      <Preview
+        // 指定 要预览的图片数组
+        imglist={this.state.items}
+        // 设置 缩略图容器的样式
+        previewBoxStyle={{ border: '1px solid #eee' }}
+        // 设置 缩略图的样式
+        thumbImgStyle={{ margin: 10, width: 100, height: 100 }}>
+      </Preview>
     </div>
   }
 }
 
-// 3. 把 虚拟DOM挂载到页面上
+// 把 虚拟DOM挂载到页面上
 ReactDOM.render(<div>
   <Test></Test>
 </div>, document.getElementById('app'))
