@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-// 导入缩略图组件
+// 导入预览组件
 import Preview from '@/components/imgpreview.jsx'
 
 // 专门用于测试的组件

@@ -29,7 +29,7 @@ import Preview from 'react-img-preview'
 ```jsx
 import React from 'react'
 import ReactDOM from 'react-dom'
-// 导入缩略图组件
+// 导入预览组件
 import Preview from 'react-img-preview'
 
 // 专门用于测试的组件
@@ -84,9 +84,9 @@ ReactDOM.render(<div>
 
 | 属性            | 类型               | 作用                                                         |
 | --------------- | ------------------ | ------------------------------------------------------------ |
-| imglist         | Array数组、必填项  | 指定需要进行预览时候的图片数组；<br />数组中每个图片信息，都应该是包含如下三个属性的对象<br />例如： {src: '图片地址', w: 宽度值, h: 高度值} |
-| previewBoxStyle | Object对象、可选项 | 设置缩略图外层容器div的style样式                             |
-| thumbImgStyle   | Object对象、可选项 | 设置每个缩略图的style样式，默认每张图片宽高各为 100px、且有 10px 的 margin |
+| imglist         | Array数组,必填  | 指定需要进行预览时候的图片数组；<br />数组中每个图片信息，都应该是包含如下三个属性的对象<br />例如： {src: '图片地址', w: 宽度值, h: 高度值} |
+| previewBoxStyle | Object对象,可选 | 设置缩略图外层容器div的style样式                             |
+| thumbImgStyle   | Object对象,可选 | 设置每个缩略图的style样式，默认每张图片宽高各为 100px、且有 10px 的 margin |
 
 
 
