@@ -7,7 +7,7 @@
 
 ## Demo
 
-![](./demo.gif)
+![demo.gif](https://gitee.com/vsdeveloper/kuaidi/raw/master/demo.gif)
 
 ## Requirements
 
