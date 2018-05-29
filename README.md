@@ -1,9 +1,13 @@
 # react preview plugin
 
-> 一个React集成[PhotoSwipe](https://github.com/dimsemenov/PhotoSwipe)图片预览插件
+> 一个React集成[PhotoSwipe](https://github.com/dimsemenov/PhotoSwipe)的**移动端**与**PC端**图片预览插件
 
 ![](https://img.shields.io/npm/dm/react-img-preview.svg)
 ![](https://img.shields.io/npm/v/react-img-preview.svg)
+
+## Demo
+
+![](./demo.gif)
 
 ## Requirements
 
@@ -18,7 +22,7 @@ npm i react-img-preview -S
 ## Usage
 ### Import plugin
 ```javascript
-import ReactPreview from 'react-img-preview'
+import Preview from 'react-img-preview'
 ```
 
 ### Examples
@@ -26,7 +30,7 @@ import ReactPreview from 'react-img-preview'
 import React from 'react'
 import ReactDOM from 'react-dom'
 // 导入缩略图组件
-import ReactPreview from 'react-img-preview'
+import Preview from 'react-img-preview'
 
 // 专门用于测试的组件
 class Test extends React.Component {
@@ -74,7 +78,20 @@ ReactDOM.render(<div>
 </div>, document.getElementById('app'))
 ```
 
+
+
+## API
+
+| 属性            | 类型               | 作用                                                         |
+| --------------- | ------------------ | ------------------------------------------------------------ |
+| imglist         | Array数组、必填项  | 指定需要进行预览时候的图片数组；<br />数组中每个图片信息，都应该是包含如下三个属性的对象<br />例如： {src: '图片地址', w: 宽度值, h: 高度值} |
+| previewBoxStyle | Object对象、可选项 | 设置缩略图外层容器div的style样式                             |
+| thumbImgStyle   | Object对象、可选项 | 设置每个缩略图的style样式，默认每张图片宽高各为 100px、且有 10px 的 margin |
+
+
+
 ## Quick Start
+
 可以直接`clone`源代码，`npm install`安装依赖包，运行 `npm run dev` 快速查看项目效果！
 1. `git clone git@github.com:daidaitu1314/react-img-preview.git`
 2. cd 到项目根目录运行 `npm install`
